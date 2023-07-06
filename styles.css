@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-de-fundo: #666666;
+    --cor-texto: white;
+    --fonte: Poppins;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+.cabeçalho {
+    display: flex;
+    background-color: black;
+    color: var(--cor-texto);
+    justify-content: space-around;
+}
+
+.cabeçalho-itens {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fonte);
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.cabeçalho-itens-maça {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fonte);
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.pagina {
+    display: flex;
+    border-top: solid 3px white;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    gap: 10px;
+    font-family: var(--fonte);
+}
+
+.barra-pesquisa input {
+    padding: 0.5em;
+    border-radius: 32px;
+    border: solid 1px;
+    cursor: pointer;
+    color: var(--cor-texto);
+    font-family: var(--fonte);
+    font-size: 16px;
+    background-color: transparent;
+    width: 20em;
+    text-align: center;
+}
+
+.barra-pesquisa input::placeholder {
+    color: white;
+    font-family: var(--fonte);
+}
+
+
+.barra-pesquisa button {
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 32px;
+    border: solid 1px;
+    cursor: pointer;
+    font-family: var(--fonte);
+    color: var(--cor-texto);
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.barra-pesquisa button:hover {
+    background-color: var(--cor-de-fundo);
+    color: white;
+}
+
+
+
+.pagina-conteudo {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagina-conteudo-texto {
+    display: flex;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 0.5em;
+    font-family: var(--fonte);
+    color: var(--cor-texto);
+    border-top: 1px solid;
+}
+
+.pagina-conteudo-preço {
+    display: flex;
+    font-size: 72px;
+    text-align: center;
+    margin-top: -0.5em;
+    font-family: var(--fonte);
+    color: var(--cor-texto);
+    border-bottom: solid 1px;
+    margin-bottom: 1em;
+
+}
+
+.pagina-conteudo-telefone {
+    display: flex;
+    width: 45%;
+    border-radius: 16px;
+    justify-content: center;
+}
+
+.pagina-conteudo-macbook {
+    display: flex;
+    border-radius: 16px;
+    width: 40%;
+    margin-top: 1em;
+}
+
+.pagina-conteudo-airpod {
+    display: flex;
+    border-radius: 16px;
+    width: 25%;
+    margin-top: 1em;
+}
+
+.pagina-conteudo-ipad {
+    display: flex;
+    border-radius: 16px;
+    width: 60%;
+    margin-top: 1em;
+}
+
+@media (max-width: 400px) {
+    .pagina-conteudo-telefone {
+        width: 100%;
+    }
+
+    .pagina-conteudo-ipad {
+        width: 100%;
+    }
+
+    .pagina-conteudo-airpod {
+        width: 40%;
+    }
+
+    .pagina-conteudo-macbook {
+        width: 90%;
+    }
+
+    .pagina-conteudo-texto {
+        font-size: 36px;
+    }
+
+    .pagina-conteudo-preço {
+        font-size: 36px;
+    }
+
+    .barra-pesquisa {
+        display: flex;
+        justify-content: center;
+        /* width: 50%; */
+    }
+}
